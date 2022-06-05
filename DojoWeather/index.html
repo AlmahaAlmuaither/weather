@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Weather</h1>
+        <div class="cities">
+            <a href="#" class="city" onclick="alert('Loading weather report...')">Makkah</a>
+            <a href="#" class="city" onclick="alert('Loading weather report...')">Jeddah</a>
+            <a href="#" class="city" onclick="alert('Loading weather report...')">Khobar</a>
+        </div>
+    </div>
+    <div class="mainContainer">
+        <div class="riyadh">
+            <h1>Riyadh</h1>
+            <div id="tempSelector">
+                <p>Show temperature in</p>
+            <select name="temp" id="templist" onchange="changeUnit(this)">
+                <option value="c">°C</option>
+                <option value="f">°F</option>
+            </select>
+            </div>
+        </div>
+        <div class="days">
+            <div class="day">
+                <h2>Today</h2>
+                <img src="assets/some_rain.png" alt="rainy-icon">
+                <p>some rain</p>
+                <div class="tembNum">
+                    <p class="high" id="high1">24°</p>
+                    <p class="low" id="low1">18°</p>
+                </div>
+            </div>
+            <div class="day">
+                <h2>Tomorrow</h2>
+                <img src="assets/some_sun.png" alt="sunny-icon">
+                <p>some sun</p>
+                <div class="tembNum">
+                    <p class="high" id="high2">27°</p>
+                    <p class="low" id="low2">19°</p>
+                </div>
+            </div>
+            <div class="day">
+                <h2>Friday</h2>
+                <img src="assets/some_clouds.png" alt="cloudy-icon">
+                <p>some clouds</p>
+                <div class="tembNum">
+                    <p class="high" id="high3">21°</p>
+                    <p class="low" id="low3">16°</p>
+                </div>
+            </div>
+            <div class="day">
+                <h2>Saturday</h2>
+                <img src="assets/some_sun.png" alt="sunny-icon">
+                <p>some sun</p>
+                <div class="tembNum">
+                    <p class="high" id="high4">26°</p>
+                    <p class="low" id="low4">21°</p>
+                </div>
+            </div>
+        </div>
+        <div class="warning">
+            <img src="assets/cookie.png" alt="cookie-icon">
+            <div class="message">
+                <h4>Stop! Cookie Time</h4>
+                <p>We use cookies (sadly not the edible ones) to presonalize content
+                    and ads, to provide social media features and to analyse our traffic.
+                    <a href="#">Read more...</a>
+                </p>
+            </div>
+            <button onclick="hide()">Accept</button>
+        </div>
+    </div>
+</body>
+</html>
